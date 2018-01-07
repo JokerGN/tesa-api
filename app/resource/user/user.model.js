@@ -43,12 +43,20 @@ let userModel = database.define('user', {
     type: Sequelize.ENUM,
     values: ['not_active', 'active'],
     defaultValue: ['not_active']
+  },
+  createdAt: {
+    type: Sequelize.DATE
+  },
+  updatedAt: {
+    type: Sequelize.DATE
+  },
+  deletedAt: {
+    type: Sequelize.DATE
   }
 }, {
   tableName: 'user',
   freezeTableName: true,
   paranoid: true,
-  timestamps: false
 })
 
 export default userModel
