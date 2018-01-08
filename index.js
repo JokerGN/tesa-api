@@ -2,7 +2,6 @@ import Koa from 'koa'
 import Router from 'koa-router'
 import bodyParser from 'koa-bodyparser'
 import cors from '@koa/cors'
-import 'babel-polyfill'
 import 'dotenv/config'
 import Teasa from './app/api/Teasa'
 
